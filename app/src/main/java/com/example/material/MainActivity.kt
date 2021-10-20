@@ -55,15 +55,23 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             }
         }
 
-        // Всплывает снейкбар при тапе по чипу
-        chip.setOnClickListener(View.OnClickListener {
-            Snackbar.make(it, chip.text.toString(), Snackbar.LENGTH_LONG)
+        // Показываем снейк бар при выборе чипа
+        chip.setOnCheckedChangeListener { chip, isChecked ->
+            // Здесь будет значение текста снейкбара
+            var message:String? = null
+
+            message = if (isChecked) selected()
+            else noSelected()
+
+            Snackbar.make(chip, message, Snackbar.LENGTH_LONG)
                 .setBackgroundTint(ContextCompat.getColor (this, R.color.orange))
                 .setTextColor(ContextCompat.getColor (this, R.color.black))
                 .show()
 
-        })
+        }
     }
 
+    private fun selected ():String {return getString(R.string.selected)}
+    private fun noSelected ():String {return getString(R.string.noSelected)}
 
 }
