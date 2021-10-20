@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chipItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:chipBackgroundColor = "@color/orange"
+    android:textColor="@color/black"
+    android:layout_margin="10dp"
+    app:chipIcon="@drawable/location"
+    app:chipIconTint="@color/black"
+    app:closeIcon="@drawable/close"
+    app:closeIconTint="@color/black"
+    style="@style/Widget.MaterialComponents.Chip.Entry"/>

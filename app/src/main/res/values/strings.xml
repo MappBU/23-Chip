@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Melissa</string>
+    <string name="rostov">Rostov</string>
+    <string name="los">Los Angeles</string>
+    <string name="york">New York</string>
+    <string name="selected">Выбрано</string>
+    <string name="noSelected">Не Выбрано</string>
+    <string name="chip">Это Чип</string>
+</resources>
